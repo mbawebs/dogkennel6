@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>GETLOWBULLIES | The Mac Bros</title>
+  <title>920 BULLIES | HANZO</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600;700&family=Montserrat:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 
@@ -13,11 +13,11 @@
       --panel:#0d0d0d;
       --white:#f4f4f4;
       --muted:#a6a6a6;
-      --red:#d00000;
-      --red2:#ff1a1a;
-      --darkred:#4b0000;
-      --silver:#c9c9c9;
-      --line:rgba(255,255,255,.12);
+      --gold:#d4af37;
+      --gold2:#ffd66b;
+      --darkgold:#5a4108;
+      --bronze:#9c7420;
+      --line:rgba(212,175,55,.22);
     }
 
     *{margin:0;padding:0;box-sizing:border-box}
@@ -37,7 +37,7 @@
       position:fixed;
       inset:0;
       background:
-        linear-gradient(rgba(0,0,0,.86),rgba(0,0,0,.96)),
+        linear-gradient(rgba(0,0,0,.88),rgba(0,0,0,.97)),
         repeating-linear-gradient(
           0deg,
           #111 0px,
@@ -49,20 +49,20 @@
           90deg,
           transparent 0px,
           transparent 90px,
-          rgba(255,255,255,.035) 91px,
-          rgba(255,255,255,.035) 94px
+          rgba(212,175,55,.05) 91px,
+          rgba(212,175,55,.05) 94px
         );
       z-index:-3;
     }
 
     body::after{
-      content:"GETLOWBULLIES / MAC BROS / MACCOLLECTION / MOST EXOTIC BULLIES IN THE STATES / ";
+      content:"920 BULLIES / HANZO / BLACK & GOLD / SAMURAI BLOODLINE / EXOTIC BULLY PROGRAM / ";
       position:fixed;
       left:-80px;
       bottom:20px;
       font-family:'Teko',sans-serif;
       font-size:8vw;
-      color:rgba(255,255,255,.035);
+      color:rgba(212,175,55,.05);
       white-space:nowrap;
       z-index:-1;
       pointer-events:none;
@@ -89,10 +89,10 @@
       letter-spacing:2px;
       text-transform:uppercase;
       color:#fff;
-      text-shadow:3px 3px 0 var(--red);
+      text-shadow:3px 3px 0 var(--darkgold);
     }
 
-    .logo span{color:var(--red2)}
+    .logo span{color:var(--gold2)}
 
     .nav-tag{
       justify-self:center;
@@ -101,9 +101,9 @@
       letter-spacing:3px;
       font-weight:900;
       text-transform:uppercase;
-      border:1px solid rgba(255,255,255,.25);
+      border:1px solid rgba(212,175,55,.35);
       padding:8px 14px;
-      background:rgba(208,0,0,.15);
+      background:rgba(212,175,55,.11);
     }
 
     .nav-links{
@@ -116,7 +116,7 @@
       letter-spacing:1px;
     }
 
-    .nav-links a:hover{color:var(--red2)}
+    .nav-links a:hover{color:var(--gold2)}
 
     .hero{
       min-height:100vh;
@@ -135,36 +135,35 @@
       position:absolute;
       inset:0;
       background:
-        radial-gradient(circle at 70% 45%, rgba(208,0,0,.28), transparent 28%),
-        linear-gradient(to right, rgba(0,0,0,.95), rgba(0,0,0,.55), rgba(0,0,0,.92)),
+        radial-gradient(circle at 70% 45%, rgba(212,175,55,.24), transparent 28%),
+        linear-gradient(to right, rgba(0,0,0,.96), rgba(0,0,0,.58), rgba(0,0,0,.94)),
         url('assets/hero/hero.png');
       background-size:cover;
       background-position:center;
       z-index:-2;
-      filter:contrast(1.1);
+      filter:contrast(1.12) saturate(1.02);
     }
 
     .hero::after{
-      content:"GET LOW";
+      content:"侍";
       position:absolute;
-      right:-30px;
-      top:155px;
-      transform:rotate(90deg);
+      right:38px;
+      top:145px;
       font-family:'Teko',sans-serif;
-      font-size:6rem;
+      font-size:10rem;
       letter-spacing:5px;
-      color:rgba(255,0,0,.12);
+      color:rgba(212,175,55,.11);
       z-index:-1;
     }
 
     .hero-left{
-      border-left:10px solid var(--red);
+      border-left:10px solid var(--gold);
       padding-left:28px;
     }
 
     .eyebrow{
       display:inline-block;
-      color:var(--red2);
+      color:var(--gold2);
       font-size:.76rem;
       letter-spacing:4px;
       font-weight:900;
@@ -180,10 +179,10 @@
       letter-spacing:-2px;
       max-width:780px;
       color:#fff;
-      text-shadow:5px 5px 0 var(--red), 10px 10px 0 #111;
+      text-shadow:5px 5px 0 var(--darkgold), 10px 10px 0 #111;
     }
 
-    .slash{color:var(--red2)}
+    .slash{color:var(--gold2)}
 
     .hero-copy{
       margin-top:26px;
@@ -214,14 +213,15 @@
       transition:.2s ease;
     }
 
-    .btn.red{
-      background:linear-gradient(135deg,#ff1a1a,#8b0000,#111);
-      border-color:rgba(255,255,255,.25);
+    .btn.gold{
+      background:linear-gradient(135deg,#ffd66b,#9c7420,#111);
+      border-color:rgba(255,255,255,.18);
+      color:#080808;
     }
 
     .btn:hover{
       transform:translate(-3px,-3px);
-      box-shadow:6px 6px 0 rgba(208,0,0,.6);
+      box-shadow:6px 6px 0 rgba(212,175,55,.45);
     }
 
     .hero-panel{
@@ -229,13 +229,14 @@
       display:grid;
       grid-template-rows:1fr auto;
       border:1px solid var(--line);
-      background:rgba(10,10,10,.65);
+      background:rgba(10,10,10,.72);
       backdrop-filter:blur(4px);
       min-height:480px;
+      box-shadow:0 0 45px rgba(212,175,55,.08);
     }
 
     .hero-panel-img{
-      background:url('assets/studs/studs.png');
+      background:url('assets/studs/stud1.png');
       background-size:contain;
       background-position:center bottom;
       background-repeat:no-repeat;
@@ -260,7 +261,7 @@
       display:block;
       font-family:'Teko',sans-serif;
       font-size:2rem;
-      color:var(--red2);
+      color:var(--gold2);
       line-height:1;
     }
 
@@ -275,7 +276,7 @@
     section{
       padding:86px 5%;
       border-bottom:1px solid var(--line);
-      box-shadow:inset 0 0 90px rgba(208,0,0,.06);
+      box-shadow:inset 0 0 90px rgba(212,175,55,.05);
     }
 
     .section-header{
@@ -289,7 +290,7 @@
     .section-number{
       font-family:'Teko',sans-serif;
       font-size:5rem;
-      color:var(--red2);
+      color:var(--gold2);
       line-height:.8;
     }
 
@@ -299,7 +300,7 @@
       text-transform:uppercase;
       line-height:.85;
       color:#fff;
-      text-shadow:4px 4px 0 var(--red);
+      text-shadow:4px 4px 0 var(--darkgold);
     }
 
     .section-header p{
@@ -311,30 +312,43 @@
 
     .street-grid{
       display:grid;
-      grid-template-columns:repeat(2,1fr);
+      grid-template-columns:1fr;
       gap:18px;
     }
 
     .dog-card{
       display:grid;
-      grid-template-columns:43% 57%;
-      min-height:430px;
+      grid-template-columns:45% 55%;
+      min-height:500px;
       background:rgba(12,12,12,.92);
       border:1px solid var(--line);
       position:relative;
       overflow:hidden;
+      box-shadow:0 0 40px rgba(212,175,55,.06);
     }
 
     .dog-card::before{
-      content:"MACCOLLECTION FILE";
+      content:"920 STUD FILE";
       position:absolute;
       top:16px;
       right:16px;
-      color:rgba(255,255,255,.18);
+      color:rgba(212,175,55,.28);
       font-size:.65rem;
       font-weight:900;
       letter-spacing:2px;
       z-index:3;
+    }
+
+    .dog-card::after{
+      content:"刀";
+      position:absolute;
+      right:24px;
+      bottom:-18px;
+      color:rgba(212,175,55,.07);
+      font-family:'Teko',sans-serif;
+      font-size:12rem;
+      z-index:1;
+      pointer-events:none;
     }
 
     .dog-img{
@@ -344,26 +358,30 @@
       background-color:#070707;
       cursor:pointer;
       border-right:1px solid var(--line);
+      position:relative;
+      z-index:2;
     }
 
     .dog-info{
-      padding:30px;
+      padding:34px;
       display:flex;
       flex-direction:column;
       justify-content:space-between;
+      position:relative;
+      z-index:2;
     }
 
     .dog-info h3{
       font-family:'Teko',sans-serif;
-      font-size:3.2rem;
-      line-height:.9;
+      font-size:4rem;
+      line-height:.88;
       color:var(--white);
       text-transform:uppercase;
-      text-shadow:3px 3px 0 var(--red);
+      text-shadow:3px 3px 0 var(--darkgold);
     }
 
     .dog-info h3 span{
-      color:var(--red2);
+      color:var(--gold2);
       display:block;
     }
 
@@ -381,7 +399,7 @@
       justify-content:space-between;
       gap:18px;
       padding-bottom:10px;
-      border-bottom:1px solid rgba(255,255,255,.08);
+      border-bottom:1px solid rgba(212,175,55,.13);
     }
 
     .info-list b{
@@ -395,7 +413,8 @@
       display:inline-block;
       align-self:flex-start;
       margin-top:22px;
-      background:linear-gradient(135deg,#ff1a1a,#8b0000,#111);
+      background:linear-gradient(135deg,#ffd66b,#9c7420,#111);
+      color:#080808;
       padding:10px 14px;
       font-size:.72rem;
       text-transform:uppercase;
@@ -434,10 +453,10 @@
       font-size:clamp(3rem,6vw,5.5rem);
       text-transform:uppercase;
       line-height:.85;
-      text-shadow:4px 4px 0 var(--red);
+      text-shadow:4px 4px 0 var(--darkgold);
     }
 
-    .sale-copy h3 span{color:var(--red2)}
+    .sale-copy h3 span{color:var(--gold2)}
 
     .sale-copy p{
       margin-top:22px;
@@ -468,7 +487,8 @@
       position:absolute;
       left:16px;
       bottom:14px;
-      background:linear-gradient(135deg,#ff1a1a,#8b0000,#111);
+      background:linear-gradient(135deg,#ffd66b,#9c7420,#111);
+      color:#080808;
       padding:8px 12px;
       font-size:.7rem;
       font-weight:900;
@@ -496,10 +516,10 @@
       font-size:clamp(3.5rem,8vw,7rem);
       line-height:.85;
       text-transform:uppercase;
-      text-shadow:4px 4px 0 var(--red);
+      text-shadow:4px 4px 0 var(--darkgold);
     }
 
-    .contact h2 span{color:var(--red2)}
+    .contact h2 span{color:var(--gold2)}
 
     .contact p{
       color:#c9c9c9;
@@ -547,7 +567,7 @@
     .lightbox img{
       max-width:92%;
       max-height:90%;
-      border:1px solid rgba(255,255,255,.18);
+      border:1px solid rgba(212,175,55,.35);
     }
 
     .close-lightbox{
@@ -556,8 +576,8 @@
       right:36px;
       width:54px;
       height:54px;
-      background:linear-gradient(135deg,#ff1a1a,#8b0000,#111);
-      color:white;
+      background:linear-gradient(135deg,#ffd66b,#9c7420,#111);
+      color:#080808;
       border:none;
       font-size:1.4rem;
       cursor:pointer;
@@ -621,11 +641,11 @@
 <body>
 
 <header class="navbar">
-  <div class="logo">GETLOW<span>BULLIES</span></div>
-  <div class="nav-tag">✦ Quality over Quantity / Est. 2007</div>
+  <div class="logo">920<span>BULLIES</span></div>
+  <div class="nav-tag">✦ Black & Gold / Samurai Exotic Bully Program</div>
   <nav class="nav-links">
     <a href="#home">Home</a>
-    <a href="#studs">Mac Bros</a>
+    <a href="#studs">Hanzo</a>
     <a href="#program">Program</a>
     <a href="#upcoming">Upcoming</a>
     <a href="#gallery">Gallery</a>
@@ -635,13 +655,13 @@
 
 <section class="hero" id="home">
   <div class="hero-left">
-    <div class="eyebrow">Home of The Mac Bros / Street Exotic Bully Program</div>
-    <h1>GETLOW<br><span class="slash">BULLIES</span><br>USA</h1>
+    <div class="eyebrow">920 BULLIES / Home of HANZO / Black & Gold Legacy</div>
+    <h1>920<br><span class="slash">BULLIES</span><br>USA</h1>
     <p class="hero-copy">
-      Quality over quantity since 2007. GETLOWBULLIES presents the MACCOLLECTION: MAC DREE and MAC MALL, together known as The Mac Bros — two exotic bullies with heavy street presence, elite structure, and a look built to stand out in the States.
+      920 BULLIES presents a black-and-gold exotic bully program built around power, discipline, structure, and presence. Home of HANZO — a stud with sharp samurai energy, bold type, and the kind of look that cuts through the noise.
     </p>
     <div class="buttons">
-      <a href="#studs" class="btn red">View The Mac Bros</a>
+      <a href="#studs" class="btn gold">View HANZO</a>
       <a href="#contact" class="btn">Tap In</a>
     </div>
   </div>
@@ -649,9 +669,9 @@
   <div class="hero-panel">
     <div class="hero-panel-img" style="background-image:url('assets/hero/hero.png');"></div>
     <div class="hero-stats">
-      <div class="stat"><strong>2007</strong><span>Established</span></div>
-      <div class="stat"><strong>MAC</strong><span>Collection</span></div>
-      <div class="stat"><strong>USA</strong><span>Exotic Bullies</span></div>
+      <div class="stat"><strong>920</strong><span>Bloodline</span></div>
+      <div class="stat"><strong>HANZO</strong><span>Main Stud</span></div>
+      <div class="stat"><strong>侍</strong><span>Samurai Code</span></div>
     </div>
   </div>
 </section>
@@ -660,8 +680,8 @@
   <div class="section-header">
     <div class="section-number">01</div>
     <div>
-      <h2>The Mac Bros</h2>
-      <p>MAC DREE and MAC MALL form the MACCOLLECTION — two exotic bullies carrying that red-and-black street energy, heavy presence, and GETLOWBULLIES identity.</p>
+      <h2>Featured Stud</h2>
+      <p>HANZO stands as the face of 920 BULLIES — black-and-gold presence, compact power, and disciplined structure with a sharp samurai-inspired identity.</p>
     </div>
   </div>
 
@@ -670,29 +690,15 @@
       <div class="dog-img" style="background-image:url('assets/studs/stud1.png');"></div>
       <div class="dog-info">
         <div>
-          <h3>STUD <span>MAC DREE</span></h3>
+          <h3>STUD <span>HANZO</span></h3>
           <div class="info-list">
-            <div><b>Camp</b><span>GETLOWBULLIES</span></div>
-            <div><b>Collection</b><span>MACCOLLECTION</span></div>
-            <div><b>Style</b><span>Exotic Bully / Street Presence / Compact Power</span></div>
+            <div><b>Camp</b><span>920 BULLIES</span></div>
+            <div><b>Theme</b><span>Black & Gold / Samurai Presence</span></div>
+            <div><b>Style</b><span>Exotic Bully / Compact Power / Heavy Structure</span></div>
+            <div><b>Energy</b><span>Disciplined / Sharp / Built Like A Weapon</span></div>
           </div>
         </div>
-        <span class="badge">Home of The Mac Bros</span>
-      </div>
-    </div>
-
-    <div class="dog-card">
-      <div class="dog-img" style="background-image:url('assets/studs/stud2.png');"></div>
-      <div class="dog-info">
-        <div>
-          <h3>STUD <span>MAC MALL</span></h3>
-          <div class="info-list">
-            <div><b>Camp</b><span>GETLOWBULLIES</span></div>
-            <div><b>Collection</b><span>MACCOLLECTION</span></div>
-            <div><b>Style</b><span>Exotic Look / Big Impact / Mac Bros Energy</span></div>
-          </div>
-        </div>
-        <span class="badge">Most Exotic Bullies In The States</span>
+        <span class="badge">Home of HANZO</span>
       </div>
     </div>
   </div>
@@ -702,8 +708,8 @@
   <div class="section-header">
     <div class="section-number">02</div>
     <div>
-      <h2>GETLOW Program</h2>
-      <p>A street-style exotic bully program built around presence, structure, attitude, and quality-first productions. No watered-down look. No random drops. Just Mac energy.</p>
+      <h2>920 Program</h2>
+      <p>A premium exotic bully program with a black-and-gold identity, focused on strong structure, clean productions, real presence, and quality-first breedings.</p>
     </div>
   </div>
 
@@ -712,29 +718,14 @@
       <div class="dog-img" style="background-image:url('assets/females/females.png');"></div>
       <div class="dog-info">
         <div>
-          <h3>Quality <span>Over Quantity</span></h3>
+          <h3>Quality <span>With Code</span></h3>
           <div class="info-list">
-            <div><b>Since</b><span>2007</span></div>
-            <div><b>Focus</b><span>Exotic Bullies With Real Presence</span></div>
-            <div><b>Brand</b><span>GETLOWBULLIES USA</span></div>
+            <div><b>Focus</b><span>Exotic Bullies With Type & Presence</span></div>
+            <div><b>Look</b><span>Low / Wide / Bold / Clean</span></div>
+            <div><b>Brand</b><span>920 BULLIES USA</span></div>
           </div>
         </div>
-        <span class="badge">Est. 2007</span>
-      </div>
-    </div>
-
-    <div class="dog-card">
-      <div class="dog-img" style="background-image:url('assets/females/females.png');"></div>
-      <div class="dog-info">
-        <div>
-          <h3>Street <span>Exotics</span></h3>
-          <div class="info-list">
-            <div><b>Look</b><span>Low / Wide / Exotic / Bold</span></div>
-            <div><b>Vibe</b><span>Red & Black Street Luxury</span></div>
-            <div><b>Identity</b><span>Home of The Mac Bros</span></div>
-          </div>
-        </div>
-        <span class="badge">GETLOW Identity</span>
+        <span class="badge">Black & Gold Standard</span>
       </div>
     </div>
   </div>
@@ -745,19 +736,19 @@
     <div class="section-number">03</div>
     <div>
       <h2>Upcoming</h2>
-      <p>Future breedings, Mac Bros updates, upcoming drops, planned productions, and GETLOWBULLIES news can live here.</p>
+      <p>Future breedings, upcoming litters, stud updates, show appearances, and 920 BULLIES announcements can live here.</p>
     </div>
   </div>
 
   <div class="for-sale-strip">
     <div class="sale-img"></div>
     <div class="sale-copy">
-      <h3>Mac Bros<br><span>News</span></h3>
+      <h3>920<br><span>News</span></h3>
       <p>
-        Use this section to announce upcoming breedings, future litters, new productions, stud updates, show appearances, available pups, or any serious GETLOWBULLIES movement.
+        Use this section to announce upcoming breedings, planned productions, available pups, future females, new stud updates, or any serious movement from the 920 BULLIES camp.
       </p>
       <div class="buttons">
-        <a href="#contact" class="btn red">Inquire</a>
+        <a href="#contact" class="btn gold">Inquire</a>
         <a href="#gallery" class="btn">View Gallery</a>
       </div>
     </div>
@@ -768,8 +759,8 @@
   <div class="section-header">
     <div class="section-number">04</div>
     <div>
-      <h2>Gallery / Street Files</h2>
-      <p>A visual look at GETLOWBULLIES, The Mac Bros, the MACCOLLECTION, and that red-and-black street bully energy.</p>
+      <h2>Gallery / 920 Files</h2>
+      <p>A visual look at 920 BULLIES, HANZO, productions, shows, updates, and that black-and-gold samurai bully energy.</p>
     </div>
   </div>
 
@@ -785,13 +776,13 @@
   <div>
     <h2>Tap<br><span>In.</span></h2>
     <p>
-      Connect with GETLOWBULLIES for MAC DREE, MAC MALL, The Mac Bros, future productions, stud service info, upcoming breedings, or serious inquiries.
+      Connect with 920 BULLIES for HANZO stud info, upcoming breedings, future productions, available pups, or serious inquiries.
     </p>
   </div>
 
   <div class="contact-box">
     <div class="buttons">
-      <a href="#" class="btn red">Instagram</a>
+      <a href="#" class="btn gold">Instagram</a>
       <a href="#" class="btn">WhatsApp</a>
       <a href="#" class="btn">Facebook</a>
     </div>
@@ -799,7 +790,7 @@
 </section>
 
 <footer>
-  <span>© 2026 GETLOWBULLIES</span>
+  <span>© 2026 920 BULLIES</span>
   <span>Website powered by MBA Webs</span>
 </footer>
 
